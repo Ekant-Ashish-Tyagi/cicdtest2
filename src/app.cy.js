@@ -1,8 +1,10 @@
 /// <reference types="Cypress" />
 
+import App from "./App"
+
 describe('App Component', () => {
     beforeEach(()=>{
-        cy.visit('http://localhost:3000/')
+        cy.mount(<App />)
     })
     it('adds text into state and toggle visibility', () => {
         cy.get('input').type('Cypress test in React')
