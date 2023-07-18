@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div className="App">
-      <input value={name} onChange={(e) => setName(e.target.value)} />
-      <button onClick={onHandleClick}>Show</button>
-      {visible && <p>{name}</p>}
+      <input id="input" value={name} onChange={(e) => setName(e.target.value)} />
+      <button onClick={onHandleClick} id="button">Show</button>
+      {visible && <p id="p">{name}</p>}
     </div>
   );
 }
